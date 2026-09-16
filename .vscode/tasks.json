@@ -107,6 +107,27 @@
       "options": {
         "cwd": "${workspaceFolder}"
       }
+    },
+    {
+      "type": "build.mta",
+      "label": "Build ",
+      "taskType": "Build",
+      "projectPath": "/home/user/projects/RiskManagement",
+      "extensions": []
+    },
+    {
+      "type": "deploy.mta.cf",
+      "label": "Deploy to Cloud Foundry ",
+      "taskType": "Deploy",
+      "mtarPath": "/home/user/projects/RiskManagement/mta_archives/RiskManagement_0.0.1.mtar",
+      "extensions": [],
+      "dependsOn": [
+        "Build "
+      ],
+      "cfTarget": "",
+      "cfEndpoint": "",
+      "cfOrg": "",
+      "cfSpace": ""
     }
   ]
 }
